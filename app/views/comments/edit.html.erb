@@ -1,0 +1,6 @@
+<div class= "comment-box">
+  <%= form_with model: [@product, @comment] do |f| %>
+    <%= f.text_field :body, class: "text-field" %>
+    <%= f.submit "update", class: "btn btn-danger" %>
+  <% end %>
+</div>

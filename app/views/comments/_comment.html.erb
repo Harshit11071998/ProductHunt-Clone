@@ -1,0 +1,17 @@
+<div id="comment-<%= comment.id %>">
+    <%= comment.user.name %>
+    <br />
+    <br />
+    <div class = "comment-body">
+        <%= comment.body %>
+        <br />
+        <% if current_user && current_user == comment.user %>
+            <%= link_to "Delete", product_comment_path(@product, comment),
+                        method: :delete, remote: true, class: "delete" %> 
+            <%= link_to "Edit", edit_product_comment_path(@product, comment), class: "edit" %>
+        <% end %>
+    </div>
+    <br />
+    <br />
+    <hr/>
+</div>

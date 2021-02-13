@@ -1,0 +1,253 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-color:#ebecee;
+}
+
+.product-con{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* border: solid 1px black; */
+   background-color: white;
+   border-radius: 1%;
+   padding: 3%;
+}
+// index
+.card{
+    margin: 0em !important;
+}
+.product_container{
+    display: flex;
+    justify-content: center;    //
+    align-items: center;
+    padding: 0.5%;
+}
+.product_container:hover{
+    background-color: #f0f3f6;      
+}
+.card-title-text{
+    padding-bottom: 3%;
+}
+.product_container .card-body{
+    display: flex;
+    flex-direction: column;
+}
+.card-title{
+      color: black;
+    font-weight: bold;
+    a { color: inherit; } 
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.card-title a{
+    text-decoration: none;
+}
+.card-text{
+    margin-bottom: 1%;
+}
+.upvote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    border:1px solid #d3cece;
+    padding: 2.3% 3% 2.3% 3%;
+    
+}
+.upvote:hover{
+    background-color:  #e2e4e7;
+}
+.upvote a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.count{
+    padding: 0.3% 2% 0.5% 2%;
+    border:1px solid #bdb9b9;
+    align-self: flex-start;
+    border-radius: 10%;
+}
+.count span{
+    font-size: 14px;
+    color: #696161;
+}
+
+@media only screen and (max-width: 767px){
+  .product_container{
+     justify-content: space-around;
+     align-items: center;
+  }
+  .product_body{
+      width: 33%;
+  }
+  .card-body{
+      width: 13em;
+  }
+  .card-title-text h5{
+    font-size: 18px;
+  }
+  .card-title-text p{
+      font-size: 14px;
+  }
+  .count span{
+    font-size: 12px;
+  }
+  .count svg{
+      width: 12px;
+      height: 12px;
+  }
+  .product_img{
+      width: 10%;
+  }
+}
+
+// show page 
+.show-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:1% 1% 1% 0;
+
+    // border:1px solid #bdb9b9;
+}
+.thumbnail{
+    padding:0 2% 0 0;
+}
+.show-header .title{
+    width: 40em;
+}
+.title h4{
+    font-weight: bold;    
+}
+
+.title h5{
+    color: #707274;
+    padding-left: 0;
+}
+.content{
+    display: flex;
+    // border:1px solid #bdb9b9;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    // border:1px solid #bdb9b9;
+    width: 75%;
+    background-color: white;
+    border-radius: 1%;
+}
+.carousel{
+    padding: 3%;
+}
+
+.desc{
+    padding: 3%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4%;
+    // padding: 0 3% 3% 3%;
+}
+
+.side-column{
+    // border:1px solid #bdb9b9;
+    width:25%;
+    padding: 0 0 0 2%;
+}
+.side-column h6{
+    padding: 0;
+}
+.side-column a{
+    color: black;
+}
+.side-column .avatar{
+    border-radius: 100%;
+    margin-right: 2%;
+}
+
+.get{
+    padding: 3% 10% 3% 10%;
+    text-align: center;
+}
+.buttons .vote{
+    padding: 3.5% 14% 3.5% 14%;
+    text-align: center;
+}
+.maker{
+    padding:4%;
+    background-color: white;
+    border-radius: 1%;
+    min-height: 30%;
+    margin-bottom: 4%;
+}
+.maker h6{
+    font-size: 14px;
+}
+.maker span{
+    font-weight: bold;
+    color: #7a7676;
+}
+.util-button{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    padding: 0 3% 3% 3%;
+}
+.hunter-btn .vote{
+    padding: 3.5% 40% 3.5% 40%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 767px){
+    .content{
+        flex-direction: column;
+    }
+    .data{
+        width: 100%;
+    }
+    .side-column{
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+    }
+}
+
+// comments
+.comment-container{
+    margin-top: 1%;
+    width: 75%;
+    background-color: white;
+    border-radius: 1%;
+}
+.comment-box{
+    padding: 3% 3% 3% 1%;
+}
+.comment-box .text-field{
+    width: 70%;
+    height: 2.25em;
+    margin: 0 4% 1% 2%;
+    border-style: solid;
+    border-color: #bdb9b9;
+    padding: 1%;
+}
+#comment_pane{
+    padding: 3%;
+}
+@media only screen and (max-width: 767px){
+    .comment-container{
+        width: 100%;
+    }
+}

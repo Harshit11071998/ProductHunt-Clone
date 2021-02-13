@@ -1,0 +1,19 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.delete{
+    text-decoration: none;
+    font-size: 14px;
+    color: #9b9696;
+}
+
+.edit{
+    margin-left: 3%;
+    text-decoration: none;
+    font-size: 14px;
+    color: #9b9696;
+}
+.comment-body{
+    margin-left: 2em;
+}

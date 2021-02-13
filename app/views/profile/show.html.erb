@@ -1,0 +1,17 @@
+<div class = "profile-head">
+    <div class= "profile-info">
+     <div class="avatar">
+      <%= image_tag(current_user.avatar, :size => "220x220", class: "user-avatar") if current_user.avatar.attached? %>
+     </div>
+     <div class="profile-detail">
+        <h2><%= @profile.name %></h2>
+        <h5><%= @profile.headline %></h5>
+        <h6><%= @profile.email %></h6>
+        <% if @profile == current_user %>
+        <%= link_to "Edit My Profile", edit_user_registration_path, class: "btn btn-outline-light edit-profile" %>
+        <% end %>
+      </div>    
+    </div>
+</div>
+<h1>My Products</h1>
+<%= render partial: "products/index", locals: { products: @profile_products } %>
